@@ -19,12 +19,14 @@ body{
     background-size: cover;
     background-image: url("../images/glasses-bg.png");
     height: 31rem;
+    display: flex;
 }
 
 header{
   display: flex;
   align-items: center;
   background-color: cadetblue;
+  margin-top: 1rem;
 }
 
 .company{
@@ -53,6 +55,19 @@ nav{
 }
 
 nav a{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu{
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu a{
   padding: 1rem 2rem;
   font-size: 1rem;
   color: white;
@@ -147,4 +162,121 @@ footer{
 footer img{
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1200px){
+
+  .background{
+    height: 22rem;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  .title{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .title h1{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+
+  header span{
+    display: none;
+  }
+
+  footer span{
+    display: none;
+  }
+
+  footer{
+    justify-content: center;
+  }
+
+  .background{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  .title{
+    margin-top: 9rem;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .title h1{
+    font-size: 1rem;
+  }
+
+  p{
+    font-size: 0.77;
+  }
+
+  .serv-list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s3{
+    margin-bottom: 0;
+  }
+
+  .service{
+    margin-bottom: 1.54rem;
+    justify-content: center;
+  }
+
+  .service p{
+    padding: 0.5rem;
+  }
+
+  .info{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .info-section{
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-section h2{
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .info-section p{
+    text-align: left;
+    margin: 1rem;
+  }
+
+  .is1{
+    margin-bottom: 3rem;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  nav{
+    display: none;
+  }
+
 }
